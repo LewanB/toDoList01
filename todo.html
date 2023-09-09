@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="todostyle.css" />
+    <link rel="stylesheet" href="insertJS.css" />
+    <script defer src="todoscript.js"></script>
+  </head>
+  <body>
+    <div class="imgBG"></div>
+    <div class="drkBG"></div>
+
+    <div class="toDoContainer">
+      <div class="formHeadingContainer">
+        <div class="formHeadlineContainer">
+          <h2>TODO</h2>
+        </div>
+        <div id="formIconContainer">
+          <div id="formIconFiller"></div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="circleIcon"></div>
+        <input
+          type="text"
+          id="taskInput"
+          class="inputClass"
+          placeholder="Create a new todo..." />
+        <button id="addButton">Add</button>
+      </div>
+      <ul class="addContainerStyle" id="addContainer">
+        <!-- <li class="liItem" id="totalItems">
+          <label class="container">
+            <input class="checkBox" type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <span class="toDoSpan">Complete Online JavaScript Course</span>
+        </li> -->
+      </ul>
+      <ul class="addContainerStyle">
+        <li class="liItem" id="lastLi">
+          <span id="itemLeft">0 items left</span>
+          <span class="lastLiSpan" id="removeAll">Clear All</span>
+          <span class="lastLiSpan" id="clearCompleted">Clear Completed</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+.imgBG {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 128, 255, 0.5),
+      rgba(245, 0, 255, 0.5)
+    ),
+    url(bgk-middle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+}
+
+.drkBG {
+  background-color: #181824;
+  height: 55vh;
+}
+
+.toDoContainer {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100vh;
+  width: 520px;
+  background-color: transparent;
+}
+
+.formHeadingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.formHeadlineContainer h2 {
+  color: #ffffff;
+  letter-spacing: 0.5em;
+  font-family: "Poppins";
+  font-size: 48px;
+  font-weight: 600;
+  margin: 9vh 0 40px 0;
+}
+
+#formIconContainer {
+  background-image: url(linear-icon-of-the-sun.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+#formIconFiller {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+#taskInput {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 40px;
+  background-color: rgb(37, 39, 60);
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 6px;
+  line-height: 80px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 80px;
+  padding-top: 6px;
+}
+
+#taskInput:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 250, 250, 0.3);
+  transition: ease-in 150ms;
+}
+
+#taskInput:focus::placeholder {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.circleIcon {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #454868;
+  background-color: transparent;
+}
+
+#addButton {
+  height: 80px;
+  width: 15%;
+  background-color: #25273c;
+  color: rgba(255, 255, 255, 0.35);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 80px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 3px;
+}
+
+#addButton:active {
+  color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 15px rgba(255, 250, 250, 0.3);
+  opacity: 0.8;
+}
